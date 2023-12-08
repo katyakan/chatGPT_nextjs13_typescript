@@ -1,13 +1,14 @@
 
 import './globals.css'
 import { Open_Sans } from "next/font/google";
+import Navbar from "app/(shared)/Navbar";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
 })
 
 
-export const metadata {
+export const metadata = {
   title: 'Blog Ai App',
   description: 'Blog built in next JS that uses AI',
 }
@@ -19,7 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html className={openSans.className}lang="en" >
-      <body >{children}</body>
+      <body >
+        <Navbar />
+        {children}
+        {/* <Footer /> */}
+        </body>
     </html>
   )
 }
