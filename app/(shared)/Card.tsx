@@ -22,7 +22,7 @@ const Card = ({className, imageHeight, isSmallCard = false, isLongForm = false}:
         <h5 className='font-semibold text-xs'>author</h5>
         <h6 className='text-wh-300 tex-xs'>date</h6>
       </div>
-      <p className='{`text-wh-500 $isLongForm ? "line-clamp-3"}'>
+      <p className='{`text-wh-100 $isLongForm ? "line-clamp-3"}'>
         snippet
       </p>
       </div>
